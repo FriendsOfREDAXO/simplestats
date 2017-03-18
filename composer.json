@@ -1,0 +1,5 @@
+{
+    "require": {
+        "dshafik/php7-mysql-shim": "^0.2.0"
+    }
+}

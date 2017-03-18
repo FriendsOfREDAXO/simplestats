@@ -1,5 +1,7 @@
 <?php
 
+require_once ($this->getPath("vendor/autoload.php"));
+
 /* @var $this rex_addon*/
 
 $dbconfig = rex::getProperty('db');

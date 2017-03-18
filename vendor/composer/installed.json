@@ -1,0 +1,46 @@
+[
+    {
+        "name": "dshafik/php7-mysql-shim",
+        "version": "0.2.0",
+        "version_normalized": "0.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dshafik/php7-mysql-shim.git",
+            "reference": "615fb0f4111d584d5a36a9abc5f0c28e417a9c7e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dshafik/php7-mysql-shim/zipball/615fb0f4111d584d5a36a9abc5f0c28e417a9c7e",
+            "reference": "615fb0f4111d584d5a36a9abc5f0c28e417a9c7e",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mysqli": "*"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^1.9",
+            "phpunit/phpunit": "^5.2",
+            "squizlabs/php_codesniffer": "^2.3"
+        },
+        "time": "2016-10-03T19:25:05+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "lib/mysql.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Davey Shafik",
+                "email": "me@daveyshafik.com",
+                "homepage": "https://daveyshafik.com"
+            }
+        ],
+        "description": "A PHP 7 shim for ext/mysql"
+    }
+]
