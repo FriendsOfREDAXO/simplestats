@@ -30,9 +30,14 @@ echo '<style>
 	display: none;
 }
 
-#main > p /* setup/config instructions*/
+#main > p /* hide config instructions */
 {
     display: none;
+}
+
+#setuppage #main > p /* show setup instructions */
+{
+    display: initial;
 }
 </style>';
 
