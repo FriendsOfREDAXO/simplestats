@@ -35,5 +35,12 @@ define( 'SIMPLE_STATS_DB_PASS', $dbconfig[$DBID]['password'] );
 define( 'SIMPLE_STATS_DB_PREFIX', rex::getTablePrefix() .'simple_stats' );
 
 if (!rex::isBackend()) {
-    require_once( $this->getPath('vendor/Simple-Stats/stats-include.php') );
+    // prevent "Argument $new is no longer supported in PHP > 7"
+    $oldReporting = error_reporting(error_reporting() &~E_DEPRECATED  &~E_WARNING &~E_NOTICE);
+
+    try {
+        require_once( $this->getPath('vendor/Simple-Stats/stats-include.php') );
+    } finally {
+        error_reporting($oldReporting);
+    }
 }
