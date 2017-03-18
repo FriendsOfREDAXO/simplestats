@@ -1,5 +1,5 @@
 {
     "require": {
-        "dshafik/php7-mysql-shim": "^0.2.0"
+        "dshafik/php7-mysql-shim": "1.0.0beta2"
     }
 }
