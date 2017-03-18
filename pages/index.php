@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ .'/../functions/function_simplestats.php';
+
 rex_response::cleanOutputBuffers();
 
 ob_start(function ($output) {
@@ -9,13 +11,8 @@ ob_start(function ($output) {
     $output = preg_replace('#(?<==(?:"|\'))images/#', '../assets/addons/simplestats/images/', $output);
 
     // ---- rewrite remaining urls to point to the backend-page-url
+    $output = rex_simplestat_add_page_param($output);
 
-    // ./?p=paths
-    $output = preg_replace('#(?<==(?:"|\'))\./\?#', 'index.php?page=simplestats&amp;', $output);
-    // ./
-    $output = preg_replace('#(?<==(?:"|\'))\./#', 'index.php?page=simplestats&amp;', $output);
-    // ?p=setup
-    $output = preg_replace('#(?<==(?:"|\'))\?#', 'index.php?page=simplestats&amp;', $output);
     return $output;
 });
 
