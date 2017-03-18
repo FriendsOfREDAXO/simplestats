@@ -1,5 +1,8 @@
 <?php
 
+// prevent "The mysql extension is deprecated and will be removed in the future"
+error_reporting(error_reporting() & ~E_DEPRECATED);
+
 require_once ($this->getPath("vendor/autoload.php"));
 
 /* @var $this rex_addon*/
