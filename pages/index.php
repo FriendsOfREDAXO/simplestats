@@ -32,6 +32,11 @@ echo '<style>
 {
 	display: none;
 }
+
+#main > p /* setup/config instructions*/
+{
+    display: none;
+}
 </style>';
 
 require_once( $this->getPath('vendor/Simple-Stats/index.php') );
