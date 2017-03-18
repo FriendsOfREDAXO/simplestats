@@ -1,0 +1,11 @@
+package: simplestats
+version: '0.1-beta1'
+author: Friends Of REDAXO
+supportpage: www.redaxo.org/de/forum/
+
+page:
+    title: 'Simple-Stats'
+    pjax: false
+    hasLayout: false
+    icon: rex-icon rex-icon-seo
+    linkAttr: { target: _blank }
