@@ -37,8 +37,9 @@ echo '<style>
 </style>';
 
 // prevent "Argument $new is no longer supported in PHP > 7"
-$oldReporting = error_reporting(error_reporting() &~E_DEPRECATED  &~E_WARNING &~E_NOTICE);
+error_reporting(error_reporting() &~(E_DEPRECATED|E_WARNING|E_USER_WARNING|E_NOTICE));
 
+require_once ($this->getPath("vendor/autoload.php"));
 require_once( $this->getPath('vendor/Simple-Stats/index.php') );
 
 // make sure the output buffer callback is called

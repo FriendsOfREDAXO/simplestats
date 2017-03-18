@@ -1,7 +1,5 @@
 <?php
 
-require_once ($this->getPath("vendor/autoload.php"));
-
 /* @var $this rex_addon*/
 
 $dbconfig = rex::getProperty('db');
@@ -36,9 +34,10 @@ define( 'SIMPLE_STATS_DB_PREFIX', rex::getTablePrefix() .'simple_stats' );
 
 if (!rex::isBackend()) {
     // prevent "Argument $new is no longer supported in PHP > 7"
-    $oldReporting = error_reporting(error_reporting() &~E_DEPRECATED  &~E_WARNING &~E_NOTICE);
+    $oldReporting = error_reporting(error_reporting() &~(E_DEPRECATED|E_WARNING|E_USER_WARNING|E_NOTICE));
 
     try {
+        require_once ($this->getPath("vendor/autoload.php"));
         require_once( $this->getPath('vendor/Simple-Stats/stats-include.php') );
     } finally {
         error_reporting($oldReporting);
