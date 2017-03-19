@@ -1,5 +1,13 @@
 {
     "require": {
-        "dshafik/php7-mysql-shim": "1.0.0beta2"
+        "dshafik/php7-mysql-shim": "1.0.0beta2",
+        "staabm/simple-stats": "^1.0"
+    },
+    "config": {
+        "autoloader-suffix": "RexSimpleStats",
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "5.5.9"
+        }
     }
 }

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitea200d8562e3bd33a2e704ec8e60e496
+class ComposerStaticInitRexSimpleStats
 {
     public static $files = array (
         'bc01e02fac7e59a14a99400d5b57be83' => __DIR__ . '/..' . '/dshafik/php7-mysql-shim/lib/mysql.php',
