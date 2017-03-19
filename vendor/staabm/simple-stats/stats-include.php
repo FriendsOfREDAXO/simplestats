@@ -18,6 +18,9 @@ class SimpleStatsHit {
 		if( in_array( $data['remote_ip'], $ss->options['ignored_ips'] ) )
 			return;
 
+        $ipAnonymizer = new \geertw\IpAnonymizer\IpAnonymizer();
+        $data['remote_ip'] = $ipAnonymizer->anonymize($data['remote_ip']);
+
 		$data['resource'] = substr( $ss->utf8_encode( $this->determine_resource() ), 0, 255 );
 		
 		$ua = new SimpleStatsUA();

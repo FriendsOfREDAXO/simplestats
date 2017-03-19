@@ -38,7 +38,7 @@ class SimpleStats {
 	}
 	
 	function connect() {
-		if( !$this->connection = mysql_connect( SIMPLE_STATS_DB_SERVER, SIMPLE_STATS_DB_USER, SIMPLE_STATS_DB_PASS, true ) ) {
+		if( !$this->connection = mysql_connect( SIMPLE_STATS_DB_SERVER, SIMPLE_STATS_DB_USER, SIMPLE_STATS_DB_PASS ) ) {
 			$this->log_error();
 			return false;
 		}

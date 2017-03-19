@@ -10,9 +10,30 @@ class ComposerStaticInitRexSimpleStats
         'bc01e02fac7e59a14a99400d5b57be83' => __DIR__ . '/..' . '/dshafik/php7-mysql-shim/lib/mysql.php',
     );
 
+    public static $prefixLengthsPsr4 = array (
+        'g' => 
+        array (
+            'geertw\\IpAnonymizer\\' => 20,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'geertw\\IpAnonymizer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/geertw/ip-anonymizer/src',
+        ),
+    );
+
+    public static $classMap = array (
+        'geertw\\IpAnonymizer\\IpAnonymizer' => __DIR__ . '/..' . '/geertw/ip-anonymizer/src/IpAnonymizer.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInitRexSimpleStats::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitRexSimpleStats::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitRexSimpleStats::$classMap;
 
         }, null, ClassLoader::class);
     }

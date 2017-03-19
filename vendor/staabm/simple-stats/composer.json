@@ -1,0 +1,14 @@
+{
+    "name": "staabm/simple-stats",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Markus Staab",
+            "email": "markus.staab@redaxo.de"
+        }
+    ],
+    "require": {
+        "geertw/ip-anonymizer": "^1.0"
+    }
+}

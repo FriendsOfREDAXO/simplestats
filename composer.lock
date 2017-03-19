@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d5cf11661b823acf921d3e8749f64c0",
+    "content-hash": "e6a6c8e6d6dcaf8e4a32672bd62a5493",
     "packages": [
         {
             "name": "dshafik/php7-mysql-shim",
@@ -50,28 +50,75 @@
             "time": "2017-01-12T20:22:02+00:00"
         },
         {
-            "name": "staabm/simple-stats",
-            "version": "v1.0",
+            "name": "geertw/ip-anonymizer",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/staabm/Simple-Stats.git",
-                "reference": "930b4f9a7e059724f84bc287986b2f60c45f2d2f"
+                "url": "https://github.com/geertw/php-ip-anonymizer.git",
+                "reference": "98c8ffad40b41ca59363f856568a761f2c8118db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/staabm/Simple-Stats/zipball/930b4f9a7e059724f84bc287986b2f60c45f2d2f",
-                "reference": "930b4f9a7e059724f84bc287986b2f60c45f2d2f",
+                "url": "https://api.github.com/repos/geertw/php-ip-anonymizer/zipball/98c8ffad40b41ca59363f856568a761f2c8118db",
+                "reference": "98c8ffad40b41ca59363f856568a761f2c8118db",
                 "shasum": ""
             },
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/"
+            "autoload": {
+                "psr-4": {
+                    "geertw\\IpAnonymizer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Geert Wirken",
+                    "email": "geert@gwirken.nl"
+                }
+            ],
+            "description": "IPv4 and IPv6 address anonymizer",
+            "time": "2016-10-27T10:15:30+00:00"
+        },
+        {
+            "name": "staabm/simple-stats",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/staabm/Simple-Stats.git",
+                "reference": "0f8cf6f69e622bee7fdbfdcb4bb0d2cc1f83ce03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/staabm/Simple-Stats/zipball/0f8cf6f69e622bee7fdbfdcb4bb0d2cc1f83ce03",
+                "reference": "0f8cf6f69e622bee7fdbfdcb4bb0d2cc1f83ce03",
+                "shasum": ""
+            },
+            "require": {
+                "geertw/ip-anonymizer": "^1.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Staab",
+                    "email": "markus.staab@redaxo.de"
+                }
+            ],
+            "time": "2017-03-19 13:46:08"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dshafik/php7-mysql-shim": 10
+        "dshafik/php7-mysql-shim": 10,
+        "staabm/simple-stats": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

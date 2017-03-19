@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'geertw\\IpAnonymizer\\IpAnonymizer' => $vendorDir . '/geertw/ip-anonymizer/src/IpAnonymizer.php',
 );
