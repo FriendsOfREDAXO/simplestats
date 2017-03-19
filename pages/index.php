@@ -45,7 +45,7 @@ echo '<style>
 error_reporting(error_reporting() &~(E_DEPRECATED|E_WARNING|E_USER_WARNING|E_NOTICE));
 
 require_once ($this->getPath("vendor/autoload.php"));
-require_once( $this->getPath('vendor/Simple-Stats/index.php') );
+require_once( $this->getPath('vendor/staabm/simple-stats/index.php') );
 
 // make sure the output buffer callback is called
 while (ob_get_level()) {

@@ -10,15 +10,15 @@ $fakeConfig = <<<'EOD'
 // this file is required by Simple-Stats
 EOD;
 
-rex_file::put($this->getPath('vendor/Simple-Stats/config.php'), $fakeConfig);
+rex_file::put($this->getPath('vendor/staabm/simple-stats/config.php'), $fakeConfig);
 
 foreach(['css/', 'js/', 'images/'] as $folder) {
-    rex_dir::copy($this->getPath('vendor/Simple-Stats/'. $folder), $this->getAssetsPath($folder));
+    rex_dir::copy($this->getPath('vendor/staabm/simple-stats/'. $folder), $this->getAssetsPath($folder));
 }
 
 // fix hardcoded urls in the provided js files
 foreach(['js/overview.js', 'js/paths.js'] as $file) {
-    $js = rex_file::get($this->getPath('vendor/Simple-Stats/'. $file));
+    $js = rex_file::get($this->getPath('vendor/staabm/simple-stats/'. $file));
     $js = rex_simplestat_add_page_param($js);
 
     rex_file::put($this->getAssetsPath($file), $js);

@@ -38,7 +38,7 @@ if (!rex::isBackend()) {
 
     try {
         require_once ($this->getPath("vendor/autoload.php"));
-        require_once( $this->getPath('vendor/Simple-Stats/stats-include.php') );
+        require_once( $this->getPath('vendor/staabm/simple-stats/stats-include.php') );
     } finally {
         error_reporting($oldReporting);
     }
