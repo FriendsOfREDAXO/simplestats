@@ -2,7 +2,7 @@
 
 Einfaches Statistik-Addon, das ohne externe Dienste Besucheranfragen protokolliert. Dabei werden nur Frontend Besucheranfragen protokolliert.
 
-![Screenshot](https://raw.githubusercontent.com/FriendsOfREDAXO/simplestats/assets/simplestats_01.png)
+![Screenshot](https://raw.githubusercontent.com/FriendsOfREDAXO/simplestats/assets/simplestats_02.png)
 
 ## Installation
 
