@@ -11,5 +11,5 @@ before_install:
     - phpenv config-rm xdebug.ini || echo "xdebug not available"
     
 script:
-    - composer require --dev friendsofredaxo/linter
+    - composer require --dev friendsofredaxo/linter --ignore-platform-reqs
     - vendor/bin/rexlint
