@@ -1,114 +1,129 @@
-[
-    {
-        "name": "dshafik/php7-mysql-shim",
-        "version": "1.0.0beta2",
-        "version_normalized": "1.0.0.0-beta2",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/dshafik/php7-mysql-shim.git",
-            "reference": "f5b1bc97181418daf854385154a2800eda04c7f1"
+{
+    "packages": [
+        {
+            "name": "dshafik/php7-mysql-shim",
+            "version": "1.0.0beta4",
+            "version_normalized": "1.0.0.0-beta4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dshafik/php7-mysql-shim.git",
+                "reference": "8a940feaa8870daa0f71cb2fdc5976b0eca05a14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dshafik/php7-mysql-shim/zipball/8a940feaa8870daa0f71cb2fdc5976b0eca05a14",
+                "reference": "8a940feaa8870daa0f71cb2fdc5976b0eca05a14",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mysqli": "*",
+                "php": ">=5.3.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "squizlabs/php_codesniffer": "^3.5",
+                "yoast/phpunit-polyfills": "^0.2.0"
+            },
+            "time": "2020-12-14T07:30:06+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "lib/mysql.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Davey Shafik",
+                    "email": "me@daveyshafik.com",
+                    "homepage": "https://daveyshafik.com"
+                }
+            ],
+            "description": "A PHP 7 shim for ext/mysql",
+            "support": {
+                "issues": "https://github.com/dshafik/php7-mysql-shim/issues",
+                "source": "https://github.com/dshafik/php7-mysql-shim/tree/1.0.0beta4"
+            },
+            "install-path": "../dshafik/php7-mysql-shim"
         },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/dshafik/php7-mysql-shim/zipball/f5b1bc97181418daf854385154a2800eda04c7f1",
-            "reference": "f5b1bc97181418daf854385154a2800eda04c7f1",
-            "shasum": ""
+        {
+            "name": "geertw/ip-anonymizer",
+            "version": "v1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/geertw/php-ip-anonymizer.git",
+                "reference": "6610b85b119de3bb505fd9a484bac67066e4a62f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/geertw/php-ip-anonymizer/zipball/6610b85b119de3bb505fd9a484bac67066e4a62f",
+                "reference": "6610b85b119de3bb505fd9a484bac67066e4a62f",
+                "shasum": ""
+            },
+            "time": "2017-06-24T13:15:14+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "geertw\\IpAnonymizer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Geert Wirken",
+                    "email": "geert@gwirken.nl"
+                }
+            ],
+            "description": "IPv4 and IPv6 address anonymizer",
+            "support": {
+                "issues": "https://github.com/geertw/php-ip-anonymizer/issues",
+                "source": "https://github.com/geertw/php-ip-anonymizer/tree/master"
+            },
+            "install-path": "../geertw/ip-anonymizer"
         },
-        "require": {
-            "ext-mysqli": "*",
-            "php": ">=5.3.6"
-        },
-        "require-dev": {
-            "friendsofphp/php-cs-fixer": "^1.9|^2.0",
-            "phpunit/phpunit": "^4.8|^5.2",
-            "squizlabs/php_codesniffer": "^2.3"
-        },
-        "time": "2017-01-12T20:22:02+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "lib/mysql.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Davey Shafik",
-                "email": "me@daveyshafik.com",
-                "homepage": "https://daveyshafik.com"
-            }
-        ],
-        "description": "A PHP 7 shim for ext/mysql"
-    },
-    {
-        "name": "geertw/ip-anonymizer",
-        "version": "v1.0.0",
-        "version_normalized": "1.0.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/geertw/php-ip-anonymizer.git",
-            "reference": "98c8ffad40b41ca59363f856568a761f2c8118db"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/geertw/php-ip-anonymizer/zipball/98c8ffad40b41ca59363f856568a761f2c8118db",
-            "reference": "98c8ffad40b41ca59363f856568a761f2c8118db",
-            "shasum": ""
-        },
-        "time": "2016-10-27T10:15:30+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "geertw\\IpAnonymizer\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Geert Wirken",
-                "email": "geert@gwirken.nl"
-            }
-        ],
-        "description": "IPv4 and IPv6 address anonymizer"
-    },
-    {
-        "name": "staabm/simple-stats",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/staabm/Simple-Stats.git",
-            "reference": "0f8cf6f69e622bee7fdbfdcb4bb0d2cc1f83ce03"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/staabm/Simple-Stats/zipball/0f8cf6f69e622bee7fdbfdcb4bb0d2cc1f83ce03",
-            "reference": "0f8cf6f69e622bee7fdbfdcb4bb0d2cc1f83ce03",
-            "shasum": ""
-        },
-        "require": {
-            "geertw/ip-anonymizer": "^1.0"
-        },
-        "time": "2017-03-19T13:46:08+00:00",
-        "type": "library",
-        "installation-source": "source",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Markus Staab",
-                "email": "markus.staab@redaxo.de"
-            }
-        ]
-    }
-]
+        {
+            "name": "staabm/simple-stats",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/staabm/Simple-Stats.git",
+                "reference": "0f8cf6f69e622bee7fdbfdcb4bb0d2cc1f83ce03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/staabm/Simple-Stats/zipball/0f8cf6f69e622bee7fdbfdcb4bb0d2cc1f83ce03",
+                "reference": "0f8cf6f69e622bee7fdbfdcb4bb0d2cc1f83ce03",
+                "shasum": ""
+            },
+            "require": {
+                "geertw/ip-anonymizer": "^1.0"
+            },
+            "time": "2017-03-19T13:46:08+00:00",
+            "type": "library",
+            "installation-source": "source",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Staab",
+                    "email": "markus.staab@redaxo.de"
+                }
+            ],
+            "install-path": "../staabm/simple-stats"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

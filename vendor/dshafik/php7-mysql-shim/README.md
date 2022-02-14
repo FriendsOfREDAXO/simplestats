@@ -1,8 +1,5 @@
-[![Build Status](https://travis-ci.org/dshafik/php7-mysql-shim.svg?branch=master)](https://travis-ci.org/dshafik/php7-mysql-shim)
-[![Build status](https://ci.appveyor.com/api/projects/status/tvj60v4y3o0mn4wp?svg=true)](https://ci.appveyor.com/project/dshafik/php7-mysql-shim)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dshafik/php7-mysql-shim/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dshafik/php7-mysql-shim/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/dshafik/php7-mysql-shim/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/dshafik/php7-mysql-shim/?branch=master)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/43c28e54-9c4a-40b4-9cc9-d6409d781dda/mini.png)](https://insight.sensiolabs.com/projects/43c28e54-9c4a-40b4-9cc9-d6409d781dda)
+[![Build Status](https://github.com/dshafik/php7-mysql-shim/workflows/Unit%20Tests/badge.svg)](https://github.com/dshafik/php7-mysql-shim/actions)
+![Code Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/dshafik/ee79527e0098afea147bffc33bf710d3/raw/coverage.json)
 # PHP 7 Shim for ext/mysql
 
 This library attempts to create a drop-in replacement for ext/mysql on PHP 7 using mysqli.
@@ -37,3 +34,7 @@ Once the `lib/mysql.php` file is included, it will create `mysql_*` functions if
 - Some errors are now from `ext/mysqli`, and others are `E_USER_WARNING` instead of `E_WARNING`.
 - You must use the `mysqli.*` INI entries instead of `mysql.*` (e.g. `mysqli.default_user` instead of `mysql.default_user`)
 - If no host, username, password parameter is provided when using the `mysql_*` functions, the default values from the corresponding `mysqli.*` settings from `php.ini` file will be used (e.g. `mysqli.default_host`, `mysqli.default_user`, `mysqli.default_pw`)
+
+## Alternatives
+
+Instead of using this drop-in-replacement library you should consider refactoring your code from `mysql` to e.g. `mysqli`. This process can be automated with e.g. https://stackoverflow.com/a/61597957

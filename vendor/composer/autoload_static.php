@@ -25,6 +25,7 @@ class ComposerStaticInitRexSimpleStats
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'geertw\\IpAnonymizer\\IpAnonymizer' => __DIR__ . '/..' . '/geertw/ip-anonymizer/src/IpAnonymizer.php',
     );
 
