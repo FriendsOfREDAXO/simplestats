@@ -3,8 +3,6 @@
  * Simple Stats: PHP web statistics software. See the license.txt file for copyright and licensing information.
  */
 
-/*
-
 if ( get_magic_quotes_gpc() ) {
 	foreach ( array_keys( $_GET ) as $key ) 
 		$_GET[$key] = stripslashes( $_GET[$key] );
@@ -14,7 +12,6 @@ if ( get_magic_quotes_gpc() ) {
 		$_COOKIE[$key] = stripslashes( $_COOKIE[$key] );
 	$_REQUEST = array_merge( $_GET, $_POST );
 }
-*/
 
 define( 'SIMPLE_STATS_PATH', realpath( dirname( __FILE__ ) ) );
 
