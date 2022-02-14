@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "e6a6c8e6d6dcaf8e4a32672bd62a5493",
     "packages": [
         {
             "name": "dshafik/php7-mysql-shim",
-            "version": "1.0.0beta4",
+            "version": "1.0.0beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dshafik/php7-mysql-shim.git",
-                "reference": "8a940feaa8870daa0f71cb2fdc5976b0eca05a14"
+                "reference": "f5b1bc97181418daf854385154a2800eda04c7f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dshafik/php7-mysql-shim/zipball/8a940feaa8870daa0f71cb2fdc5976b0eca05a14",
-                "reference": "8a940feaa8870daa0f71cb2fdc5976b0eca05a14",
+                "url": "https://api.github.com/repos/dshafik/php7-mysql-shim/zipball/f5b1bc97181418daf854385154a2800eda04c7f1",
+                "reference": "f5b1bc97181418daf854385154a2800eda04c7f1",
                 "shasum": ""
             },
             "require": {
@@ -25,9 +25,9 @@
                 "php": ">=5.3.6"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.16",
-                "squizlabs/php_codesniffer": "^3.5",
-                "yoast/phpunit-polyfills": "^0.2.0"
+                "friendsofphp/php-cs-fixer": "^1.9|^2.0",
+                "phpunit/phpunit": "^4.8|^5.2",
+                "squizlabs/php_codesniffer": "^2.3"
             },
             "type": "library",
             "autoload": {
@@ -47,24 +47,20 @@
                 }
             ],
             "description": "A PHP 7 shim for ext/mysql",
-            "support": {
-                "issues": "https://github.com/dshafik/php7-mysql-shim/issues",
-                "source": "https://github.com/dshafik/php7-mysql-shim/tree/1.0.0beta4"
-            },
-            "time": "2020-12-14T07:30:06+00:00"
+            "time": "2017-01-12T20:22:02+00:00"
         },
         {
             "name": "geertw/ip-anonymizer",
-            "version": "v1.1.0",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/geertw/php-ip-anonymizer.git",
-                "reference": "6610b85b119de3bb505fd9a484bac67066e4a62f"
+                "reference": "98c8ffad40b41ca59363f856568a761f2c8118db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/geertw/php-ip-anonymizer/zipball/6610b85b119de3bb505fd9a484bac67066e4a62f",
-                "reference": "6610b85b119de3bb505fd9a484bac67066e4a62f",
+                "url": "https://api.github.com/repos/geertw/php-ip-anonymizer/zipball/98c8ffad40b41ca59363f856568a761f2c8118db",
+                "reference": "98c8ffad40b41ca59363f856568a761f2c8118db",
                 "shasum": ""
             },
             "type": "library",
@@ -84,11 +80,7 @@
                 }
             ],
             "description": "IPv4 and IPv6 address anonymizer",
-            "support": {
-                "issues": "https://github.com/geertw/php-ip-anonymizer/issues",
-                "source": "https://github.com/geertw/php-ip-anonymizer/tree/master"
-            },
-            "time": "2017-06-24T13:15:14+00:00"
+            "time": "2016-10-27T10:15:30+00:00"
         },
         {
             "name": "staabm/simple-stats",
@@ -107,7 +99,6 @@
             "require": {
                 "geertw/ip-anonymizer": "^1.0"
             },
-            "default-branch": true,
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -119,10 +110,7 @@
                     "email": "markus.staab@redaxo.de"
                 }
             ],
-            "support": {
-                "source": "https://github.com/staabm/Simple-Stats/tree/master"
-            },
-            "time": "2017-03-19T13:46:08+00:00"
+            "time": "2017-03-19 13:46:08"
         }
     ],
     "packages-dev": [],
@@ -138,6 +126,5 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "5.5.9"
-    },
-    "plugin-api-version": "2.2.0"
+    }
 }
