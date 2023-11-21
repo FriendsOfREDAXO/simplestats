@@ -1,6 +1,6 @@
 # simplestats
 
-⚠️Entwicklung eingestellt: Das AddOn wird nicht länger gepflegt. / Deprecated: This AddOn won’t be maintained any longer.
+⚠️**Entwicklung eingestellt**: Das AddOn wird nicht länger gepflegt. / Deprecated: This AddOn won’t be maintained any longer.
 
 Einfaches Statistik-Addon, das ohne externe Dienste Besucheranfragen protokolliert. Dabei werden nur Frontend Besucheranfragen protokolliert.
 
